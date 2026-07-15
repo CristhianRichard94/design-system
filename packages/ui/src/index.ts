@@ -1,5 +1,8 @@
 export { cn } from "./lib/cn";
 
+// ---------------------------------------------------------------------------
+// Primitives
+// ---------------------------------------------------------------------------
 export { Button, buttonVariants, type ButtonProps } from "./primitives/Button";
 export { Badge, badgeVariants, type BadgeProps } from "./primitives/Badge";
 export { Input, type InputProps } from "./primitives/Input";
@@ -40,3 +43,15 @@ export {
   DropdownMenuLabel,
   DropdownMenuSeparator
 } from "./primitives/DropdownMenu";
+
+// ---------------------------------------------------------------------------
+// Showpieces
+// ---------------------------------------------------------------------------
+export { SpotlightCard, type SpotlightCardProps } from "./showpieces/SpotlightCard";
+export {
+  AnimatedGradientHero,
+  type AnimatedGradientHeroProps
+} from "./showpieces/AnimatedGradientHero";
+export { Marquee, type MarqueeProps } from "./showpieces/Marquee";
+export { BentoGrid, type BentoGridProps } from "./showpieces/BentoGrid";
+export { BentoGridItem, type BentoGridItemProps } from "./showpieces/BentoGridItem";

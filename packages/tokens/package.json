@@ -1,6 +1,6 @@
 {
   "name": "@ds/tokens",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "main": "./src/tokens.ts",
@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "echo '@ds/tokens: no build step (consumed as source)'",
     "build": "echo '@ds/tokens: no build step (consumed as source)'",
-    "lint": "echo '@ds/tokens: no lint configured'",
+    "lint": "eslint src",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {

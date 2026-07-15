@@ -62,6 +62,15 @@ const preset: Config = {
         out: "var(--ease-out)",
         in: "var(--ease-in)",
         "in-out": "var(--ease-in-out)"
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" }
+        }
+      },
+      animation: {
+        marquee: "marquee linear infinite"
       }
     }
   },

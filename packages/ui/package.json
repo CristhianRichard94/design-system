@@ -1,6 +1,6 @@
 {
   "name": "@ds/ui",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "main": "./dist/index.cjs",
@@ -19,8 +19,9 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
-    "lint": "echo '@ds/ui: no lint configured'",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -44,6 +45,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }

@@ -8,7 +8,15 @@ const components = [
   { slug: "tooltip", name: "Tooltip", description: "Hover hints" },
   { slug: "tabs", name: "Tabs", description: "Segmented navigation" },
   { slug: "dialog", name: "Dialog", description: "Modal overlay" },
-  { slug: "dropdown-menu", name: "Dropdown Menu", description: "Contextual menu" }
+  { slug: "dropdown-menu", name: "Dropdown Menu", description: "Contextual menu" },
+  { slug: "spotlight-card", name: "Spotlight Card", description: "Cursor-tracking gradient spotlight" },
+  {
+    slug: "animated-gradient-hero",
+    name: "Animated Gradient Hero",
+    description: "Hero with looping accent gradient"
+  },
+  { slug: "marquee", name: "Marquee", description: "Infinite-scroll content strip" },
+  { slug: "bento-grid", name: "Bento Grid", description: "Spanning grid layout with glow hover" }
 ];
 
 export default function HomePage() {
