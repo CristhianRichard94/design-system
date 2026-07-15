@@ -19,17 +19,17 @@ export const neutral = {
 } as const;
 
 export const accent = {
-  50: "#ecfeff",
-  100: "#cffafe",
-  200: "#a5f3fc",
-  300: "#67e8f9",
-  400: "#22d3ee",
-  500: "#06b6d4",
-  600: "#0891b2",
-  700: "#0e7490",
-  800: "#155e75",
-  900: "#164e63",
-  950: "#083344"
+  50: "#eff4ff",
+  100: "#dbe6fe",
+  200: "#bfd4fe",
+  300: "#93b7fd",
+  400: "#6090fa",
+  500: "#3b66f5",
+  600: "#2547e8",
+  700: "#1e3ac7",
+  800: "#1e3aa1",
+  900: "#1e3a8a",
+  950: "#16215a"
 } as const;
 
 export const semanticDark = {
@@ -38,9 +38,9 @@ export const semanticDark = {
   muted: neutral[900],
   mutedForeground: neutral[400],
   border: neutral[800],
-  ring: accent[400],
-  accent: accent[500],
-  accentForeground: neutral[950],
+  ring: accent[500],
+  accent: accent[700],
+  accentForeground: neutral[50],
   destructive: "#ef4444",
   destructiveForeground: neutral[50],
   card: neutral[900],
@@ -53,8 +53,8 @@ export const semanticLight = {
   muted: neutral[100],
   mutedForeground: neutral[600],
   border: neutral[200],
-  ring: accent[500],
-  accent: accent[500],
+  ring: accent[600],
+  accent: accent[700],
   accentForeground: neutral[50],
   destructive: "#dc2626",
   destructiveForeground: neutral[50],
