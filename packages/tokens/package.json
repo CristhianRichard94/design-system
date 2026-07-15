@@ -1,0 +1,24 @@
+{
+  "name": "@ds/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/tokens.ts",
+  "types": "./src/tokens.ts",
+  "exports": {
+    ".": "./src/tokens.ts",
+    "./css": "./src/tokens.css"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "dev": "echo '@ds/tokens: no build step (consumed as source)'",
+    "build": "echo '@ds/tokens: no build step (consumed as source)'",
+    "lint": "echo '@ds/tokens: no lint configured'",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
