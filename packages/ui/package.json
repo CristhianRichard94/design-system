@@ -1,7 +1,6 @@
 {
   "name": "@ds/ui",
   "version": "0.1.1",
-  "private": true,
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -19,6 +18,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "prepare": "tsup",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run"
@@ -28,7 +28,6 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@ds/tokens": "workspace:*",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",

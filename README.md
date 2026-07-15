@@ -3,7 +3,7 @@
 Shared source of truth for shadcn/Radix-based components used across
 `automakers-landing`, `caseritas-arg`, `roomigos`, and future projects.
 
-Dark-first, bold/modern (Aceternity-style) aesthetic, electric blue/cyan accent.
+Dark-first, bold/modern (Aceternity-style) aesthetic, navy blue accent.
 
 ## Structure
 
@@ -73,3 +73,29 @@ if their build can resolve this repo's path).
 Run `pnpm --filter @ds/ui build` after any change to `packages/ui` so the
 `dist/` output consumed via `file:` stays up to date (or run `pnpm dev` for a
 watch build during active development).
+
+## Consume from another project (remote, via GitHub)
+
+Repo is public: https://github.com/CristhianRichard94/design-system. Both
+`packages/ui` and `packages/tokens` have a `prepare` script, so a git install
+builds `dist/` automatically — no need to commit build output to the repo.
+
+**pnpm** (recommended — supports subdirectory installs natively):
+
+```json
+{
+  "dependencies": {
+    "@ds/tokens": "github:CristhianRichard94/design-system#path:packages/tokens",
+    "@ds/ui": "github:CristhianRichard94/design-system#path:packages/ui"
+  }
+}
+```
+
+Pin to a tag instead of `main` for stability, e.g.
+`#v0.1.1&path:packages/ui`.
+
+**npm / yarn / bun**: none of these support installing a subdirectory of a
+git repo as a package — a `github:` dependency always installs the repo
+root. For npm-based or bun-based consumer projects (`automakers-landing` is
+bun, `caseritas-arg`/`roomigos` are npm), use the `file:` protocol above
+instead, or switch that project to pnpm.
