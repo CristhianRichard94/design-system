@@ -44,6 +44,28 @@ export {
   DropdownMenuSeparator
 } from "./primitives/DropdownMenu";
 
+export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+  SelectScrollUpButton,
+  SelectScrollDownButton
+} from "./primitives/Select";
+export { Checkbox } from "./primitives/Checkbox";
+export { RadioGroup, RadioGroupItem } from "./primitives/RadioGroup";
+export { Switch } from "./primitives/Switch";
+export { Textarea, type TextareaProps } from "./primitives/Textarea";
+export { Avatar, AvatarImage, AvatarFallback } from "./primitives/Avatar";
+export { Popover, PopoverTrigger, PopoverAnchor, PopoverContent } from "./primitives/Popover";
+export { Separator } from "./primitives/Separator";
+export { Skeleton, type SkeletonProps } from "./primitives/Skeleton";
+export { Slider } from "./primitives/Slider";
+
 // ---------------------------------------------------------------------------
 // Showpieces
 // ---------------------------------------------------------------------------

@@ -24,6 +24,7 @@ export const DropdownMenuContent = React.forwardRef<
         ref={ref}
         sideOffset={sideOffset}
         asChild
+        forceMount
         {...props}
       >
         <MotionDiv
